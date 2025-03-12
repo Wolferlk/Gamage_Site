@@ -1,14 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { AtSign, Lock, ArrowRight } from "lucide-react";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate(); // 👈 Hook for navigation
   
   const handleLogin = (e) => {
     e.preventDefault();
     console.log("Logging in", { email, password });
+
+    // Simulate login validation (replace with actual authentication logic)
+    if (email && password) {
+      navigate("/dashboard"); // 👈 Redirect to dashboard on successful login
+    } else {
+      alert("Please enter valid credentials!");
+    }
   };
   
   return (

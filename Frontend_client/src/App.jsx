@@ -13,6 +13,7 @@ import Signup from './Pages/Signup';
 import Dashboard from './Pages/Dashboard';
 import Application from './Pages/Application';
 import BlogPage from './Pages/BlogPage';
+import BlogDetailsPage from './Pages/BlogDetailsPage';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/application" element={<Application />} />
             <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:blogid" element={<BlogDetailsPage/>} />
           </Routes>
         </main>
         <Footer />

@@ -82,15 +82,7 @@ export default function SignupPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
-      {/* Header with logo */}
-      <header className="pt-6 px-6 md:px-12 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-800">
-          Gamage Recruiters
-        </Link>
-        <Link to="/login" className="text-indigo-700 hover:text-indigo-900 font-medium flex items-center">
-          Already have an account? <span className="ml-1 underline">Log in</span>
-        </Link>
-      </header>
+      
 
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
